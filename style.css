@@ -10,12 +10,14 @@ body{
 }
 header{
     display: flex;
-    /* position: fixed; */
+    position: fixed;
     background-color: #2874f0;
     width: 100%;
     height: 52px;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    width: 100%;
+    z-index: 101;
     /* font-family: Arial; */
 }
 .header-container-mob{
@@ -94,6 +96,7 @@ nav{
     z-index: 100;
     background-color: white;
     width: 100%;
+    top: 52px;
 }
 .nav-elements-container-mob{
     height: 48px;
@@ -130,16 +133,34 @@ nav{
 }
 /* main mobile */
 main{
-    padding-top: 52px;
+    padding-top: 104px;
 }
 
-.more-container-mob{
-
+.main-container-mob{
+    display: flex;
+    flex-direction: column;
 }
 
-.mobile-spec-conatiner{
-
+.mobile-spec-container-mob{
+    border-bottom: 1px solid #dddd;
+    position: relative;
 }
+.like-container{
+    width: 36px;
+    height: 36px;
+    background-color:rgba(255,255,255,1.00);
+    /* background-color: #ffe500; */
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    top:8px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .mobile-img-detail-card{
     display: flex;
     padding: 12px 0px;
@@ -148,8 +169,15 @@ main{
     height: 142px;
     margin-left: 5px;
 }
+.img-box{
+    width: 96px;
+    height: 120px; 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
 .mobile-img-detail-card .img-box img{
-    width:96px ;
+    width:96px;
     height: 114px;
 }
 .detail-box{
@@ -165,6 +193,9 @@ main{
     font-size: 14px;
     color: #2a2a2a;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: normal;
+    width: 163px;
+    height: 32px;
 }
 .rating-container{
     display: flex; 
@@ -223,7 +254,28 @@ main{
     color: #26a541;
     font-family:  Medium,Roboto-Medium,Droid Sans,HelveticaNeue-Medium,Helvetica Neue Medium,sans-serif-medium;
 }
-
+.spec-card-mob{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 304px;
+    /* background-color: #26a541; */
+}
+.spec-box-mob{
+    display: flex;
+    border-radius: 2px;
+    border: 1px solid rgba(240,240,240,1.00);
+    margin: 0 0 10px 10px;
+    max-width: 304px;
+    height: 22px;
+    align-items: center;
+}
+.spec-box-mob p{
+    font-size:12px;
+    color:  #878787;
+    white-space: nowrap;
+    padding: 0 8px;    
+    font-family: Roboto Medium,Roboto-Medium,Droid Sans,HelveticaNeue-Medium,Helvetica Neue Medium,sans-serif-medium
+}
 
 
 
