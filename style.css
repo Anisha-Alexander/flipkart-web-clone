@@ -129,6 +129,9 @@ nav{
     height: 4px;
 }
 /* main mobile */
+main{
+    padding-top: 52px;
+}
 
 .more-container-mob{
 
