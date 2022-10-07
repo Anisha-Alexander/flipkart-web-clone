@@ -144,6 +144,7 @@ main{
 .mobile-spec-container-mob{
     border-bottom: 1px solid #dddd;
     position: relative;
+    /* max-width: 375px; */
 }
 .like-container{
     width: 36px;
@@ -257,7 +258,7 @@ main{
 .spec-card-mob{
     display: flex;
     flex-wrap: wrap;
-    max-width: 304px;
+    max-width: 409px;
     /* background-color: #26a541; */
 }
 .spec-box-mob{
@@ -292,8 +293,12 @@ main{
 
 
 
-@media screen and (min-width:960px){
+@media screen and (min-width:768px){
 
+    /* header for desktop */
+.header-container-mob{
+    display: none;
+}
 .header-container-desk{
     display: flex;
     max-width: 1248px;
@@ -398,11 +403,20 @@ main{
 .cart-container svg{
     margin: 0 8px;
 }
-/* nav bar */
+/* nav bar desktop*/
 nav{
-    padding-top: 57px;
     display: flex;
     justify-content: center;
+    position: relative;
+    padding-top: 0px;
+
+}
+
+.shadow-image-mob{
+    display: none;
+}
+.nav-elements-container-mob{
+    display: none;
 }
 .nav-elements-container-desk{
     /* max-width: 1248px; */
