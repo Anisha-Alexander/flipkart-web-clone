@@ -973,7 +973,10 @@ li::marker{
     .nav-elements-container-desk{
         justify-content: space-between;
         max-width: 1185px;
+        margin: 0px 17px ;
     }
+}
+@media screen and (min-width: 1024px){    
     .cost-assured-box .assured-img{
         display: flex;
     }
@@ -984,5 +987,13 @@ li::marker{
     }
     .to-none{
         display: none;
+    }
+
+}
+@media screen and (min-width: 1300px){
+    .nav-elements-container-desk{
+        justify-content: space-between;
+        max-width: 1185px;
+        margin: 0px auto ;
     }
 }
