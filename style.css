@@ -979,6 +979,8 @@ li::marker{
     }
     .cost-assured-box{
         display: flex;
+        align-items: center;
+        gap: 15px;
     }
     .to-none{
         display: none;
