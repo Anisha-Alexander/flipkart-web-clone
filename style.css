@@ -937,6 +937,7 @@ li::marker{
 }
 .add-compare-check{
     padding-top: 10px;
+    color: #212121;
 }
 .img-compare-box{
     position: relative;
@@ -974,6 +975,46 @@ li::marker{
         justify-content: space-between;
         max-width: 1185px;
         margin: 0px 17px ;
+    }
+    /* hoverings */
+
+    .name-logo-container:hover .tagline-box span{
+        text-decoration: underline;
+        text-decoration-color: white;
+        cursor: pointer;
+    }
+    .login-container:hover{
+        cursor: pointer;
+    }
+    .more-container svg:hover{
+        transform: rotateZ(90deg);
+    }
+    .element-card:hover{
+        cursor: pointer;
+    }
+    .element-card:hover span{
+        color: #2874f0;
+    }
+    .element-card i{
+        font-size: 12px;
+    }
+    .element-card:hover i{
+        color: #2874f0;
+        transform: rotate(180deg);
+        padding-right: 5px;
+        padding-left: 0;
+        /* background-color: #212121; */
+
+    }
+    .aside-head:hover{
+        cursor: pointer;
+    }
+    .item-name:hover p{
+        color: #2874f0;
+    }
+    .add-compare-check:hover p{
+        color: black;
+
     }
 }
 @media screen and (min-width: 1024px){    
